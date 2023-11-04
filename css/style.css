@@ -2627,13 +2627,13 @@ body {
   }
 
   .menu__body {
-    padding-top: 7.5rem;
+    padding-top: 8.75rem;
     padding-bottom: 5rem;
     position: fixed;
     top: 0;
     left: -100%;
+    height: calc(100vh + 6.25rem);
     width: 100%;
-    overflow: auto;
     background-color: #adff99;
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
