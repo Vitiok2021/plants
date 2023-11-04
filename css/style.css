@@ -532,6 +532,7 @@ body {
 
 .header__top {
   position: relative;
+  z-index: 3;
   padding-bottom: 1.5625rem;
   border-bottom: 0.0625rem solid rgba(26, 115, 3, 0.5);
   display: -webkit-box;
@@ -2637,6 +2638,20 @@ body {
     background-color: #adff99;
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
+    overflow-y: scroll;
+  }
+
+  .menu__body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(248, 248, 248, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    z-index: 2;
+    height: 7.5625rem;
   }
 
   .menu-open .menu__body {
